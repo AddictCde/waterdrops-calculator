@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    background: url('assets/water-drops.gif') no-repeat;
+    background-size: cover;
+    border-radius: 7px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.container .main {
+    position: relative;
+    display: grid;
+}
+
+.container .main .value {
+    grid-column: span 4;
+    height: 140px;
+    width: 300px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container .main span {
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.25s;
+}
+
+.container .main span:hover {
+    transition: 0s;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.container .main .clear {
+    grid-column: span 2;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container .main .clear:hover {
+    background-color: rgba(233, 150, 122, 0.7);
+}
+
+.container .main .plus {
+    grid-row: span 2;
+    height: 150px;
+}
+
+.container .main .equal {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container .main .equal:hover {
+    background-color: rgba(95, 158, 160, 0.7);
+}

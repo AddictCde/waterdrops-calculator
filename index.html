@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterdrops Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="main" name="calculator">
+            <input type="text" class="value" name="view"/>
+            <span class="btn-number clear" onclick="calculator.view.value = ''">C</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '/'">/</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '*'">x</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '7'">7</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '8'">8</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '9'">9</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '-'">-</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '4'">4</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '5'">5</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '6'">6</span>
+            <span class="btn-number plus" onclick="document.calculator.view.value += '+'">+</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '1'">1</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '2'">2</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '3'">3</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '0'">0</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '00'">00</span>
+            <span class="btn-number" onclick="document.calculator.view.value += '.'">.</span>
+            <span class="btn-number" onclick="document.calculator.view.value = eval(calculator.view.value)">=</span>
+
+
+
+        </form>
+    </div>
+</body>
+</html>
